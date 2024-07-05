@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_appointment"
+    android:background="@drawable/registerimg">
+    <LinearLayout
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/viewupdate_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="ACCEPT OR REJECT"
+            android:textColor="#FFF"
+            android:textSize="11.7sp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="#fff"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/sendmsg"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="SEND MSG"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/viewrefresh_data"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:text="VIEW"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewdata_list_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="APPOINTMENT"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/viewcall_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_below="@id/viewdata_list_count"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+
+    <Button
+        android:id="@+id/viewback_btn"
+        android:layout_width="120dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="18dp"
+        android:layout_toStartOf="@+id/viewpet_btn"
+        android:backgroundTint="#673AB7"
+        android:text="Back"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="4" />
+
+    <Button
+        android:id="@+id/viewpet_btn"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#673AB7"
+        android:text="View Pet"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794" />
+
+</RelativeLayout>

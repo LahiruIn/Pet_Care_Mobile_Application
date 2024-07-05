@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Update Caregiver Profile"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/careid"
+        android:hint="Caregiver Name : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/carename"
+        android:hint="Caregiver Location (City) : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/careexp"
+        android:hint="Caregiver Experience : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/carecontact"
+        android:hint="Caregiver Contact No: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/carefee"
+        android:hint="Caregiver Fee : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/cupdate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:text="Update"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>
